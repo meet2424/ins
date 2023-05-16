@@ -1,16 +1,6 @@
-# Python3 program to illustrate
-# Rail Fence Cipher Encryption
-# and Decryption
-
-# function to encrypt a message
+ 
 def encryptRailFence(text, key):
-
-	# create the matrix to cipher
-	# plain text key = rows ,
-	# length(text) = columns
-	# filling the rail matrix
-	# to distinguish filled
-	# spaces from blank ones
+ 
 	rail = [['\n' for i in range(len(text))]
 				for j in range(key)]
 	
