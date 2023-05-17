@@ -1,8 +1,7 @@
  
 def encryptRailFence(text, key):
  
-	rail = [['\n' for i in range(len(text))]
-				for j in range(key)]
+	rail = [['\n' for i in range(len(text))]for j in range(key)]
 	
 	# to find the direction
 	dir_down = False

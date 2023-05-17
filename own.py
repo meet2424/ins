@@ -37,8 +37,7 @@ def encryption(pt):
   half = int(n/2)
   LPT = pt[:half]
   RPT = pt[half:]
-  key = ''.join(random.choices(string.ascii_lowercase,
-  k=len(LPT)))
+  key = ''.join(random.choices(string.ascii_lowercase,k=len(LPT)))
   temp_LPT = ""
   print(key)
   print("Before xor : ",LPT)
@@ -95,7 +94,8 @@ if __name__ == "__main__":
   plain_text = "djsaghvi"
   # print(sbox_substitution("jp"))
   key ,ct = encryption(plain_text)
-  print(decryption(ct ,key))
+  print("Encrypted",ct)
+  print("Decrypted",decryption(ct ,key))
 
 #  Get a plain text
 #  For initial permutation left rotate string by half
