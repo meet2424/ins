@@ -1,8 +1,8 @@
 
 def generate_key_matrix(key):
     # Generating the key matrix
-    key = key.replace("J", "I")  # Replacing 'J' with 'I'
     key = key.upper()
+    key = key.replace("J", "I")  # Replacing 'J' with 'I'
     key_matrix = []
     chars_added = set()
     
